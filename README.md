@@ -1,6 +1,6 @@
 This is Intra Region VPC Peering Assignment-02, which is about the CLI-driven workflow (remote) with multiple workspaces and showing state dependencies among workspaces. Also includes VPC peering flows and private/public instances creations. 
 
-### Remote-Exec Is Not Idempotent (Ko Sai)
+### Remote-Exec Is Not Idempotent
 * Terraform provisioners do not maintain state: each apply or taint triggers all commands exactly as written.
 * Most shell commands (such as apt install, unzip, and file removals) do not check if actions are needed.
 * This can lead to unnecessary reinstallation of packages and redundant operations on each run.
